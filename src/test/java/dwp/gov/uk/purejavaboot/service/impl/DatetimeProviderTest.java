@@ -5,11 +5,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.junit.runner.Runner;
 import org.junit.runners.JUnit4;
-
-import java.time.LocalDateTime;
-import java.time.Month;
 
 @RunWith(JUnit4.class)
 public class DatetimeProviderTest {
