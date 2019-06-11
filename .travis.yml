@@ -5,7 +5,7 @@ addons:
   sonarcloud:
     organization: leixia81-github
     token:
-      secure: 32fa0ed5164392dd10dc5201823ff26ee22a72da
+      secure: 2c12e5d314fd8b56ced00d81899afd3d6df4a254
 jdk:
   - oraclejdk8
 script:
