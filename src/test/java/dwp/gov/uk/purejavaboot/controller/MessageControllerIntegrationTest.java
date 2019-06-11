@@ -1,5 +1,6 @@
 package dwp.gov.uk.purejavaboot.controller;
 
+import dwp.gov.uk.purejavaboot.util.TimeDateStub;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,7 +22,8 @@ public class MessageControllerIntegrationTest {
 
     @Test
     public void shouldReturnGreetMessage() {
+        String expected = String.format("hello %s", TimeDateStub.timeToStringStub());
         String url = String.format("http://localhost:%d/api/ping", localPort);
-        Assert.assertEquals("hello", this.testRestTemplate.getForObject(url, String.class));
+        Assert.assertEquals(expected, this.testRestTemplate.getForObject(url, String.class));
     }
 }

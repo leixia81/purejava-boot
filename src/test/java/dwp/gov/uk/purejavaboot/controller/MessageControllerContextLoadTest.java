@@ -10,14 +10,13 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class MessageControllerContextTest {
+public class MessageControllerContextLoadTest {
 
     @Autowired
     private MessageController messageController;
 
     @Test
-    public void shouldContextLoadOkWithAllDependencies() throws Exception {
+    public void shouldContextLoadOkWithAllDependencies() {
         Assert.assertNotNull(messageController);
     }
-
 }
