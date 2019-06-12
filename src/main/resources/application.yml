@@ -14,3 +14,10 @@ spring:
       database: nullbeans
       username: myusername
       password: mypassword
+
+app:
+  from: mock_test_from
+  to: mock_test_to
+  custom:
+    c1: c1_mock_val
+    c2: c2_mock_val
